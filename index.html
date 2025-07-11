@@ -1,27 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diễn viên hiện trên biển</title>
-  <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    body {
+      background-color: #000;
+      color: #eee;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      letter-spacing: 2px;
+    }
+
+    .poem {
+      white-space: pre-wrap;
+      font-size: 1rem;
+      line-height: 1.8;
+      background-color: #111;
+      padding: 1.5rem;
+      border: 1px solid #333;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+      filter: grayscale(100%);
+      object-fit: cover;
+      border: 4px solid #222;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin-bottom: 2rem;
+    }
+
+    .intro {
+      background-color: #111;
+      padding: 2rem;
+      border-top: 1px solid #444;
+      border-bottom: 1px solid #444;
+    }
+
+    .intro h2 {
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 1rem;
+    }
+
+    .intro p {
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>Diễn viên hiện trên biển</h1>
-    <pre class="poem">
-Kỹ sư điện ngoài khơi.
-Có passkey, có lens, không có sóng.
-Vừa unlock server, vừa bắt ánh sáng. Passkey đâu - tôi đó.
-Giữa đại dương không Wi-Fi, tôi vẫn sync được cảm xúc.
-Cầm passkey mở bảo mật, cầm máy ảnh mở lòng người.
-Debug mạng xong, tôi đi chụp ánh sáng. Gọi đó là cân bằng.
-Ảnh không nét thì tôi lấy nét. Sóng không mạnh thì tôi reset router.
-Dưới ánh trăng và tín hiệu VSAT, tôi chỉnh tay cả khẩu độ lẫn subnet.
 
-Diễn viên hiện trên biển ©️
-    </pre>
+    <div class="poem">
+Kỹ sư điện ngoài khơi.
+Không có sóng, tôi vẫn sync được cảm xúc
+Cầm passkey mở bảo mật, cầm máy ảnh mở lòng người
+Ảnh không nét thì tôi lấy nét. Sóng không mạnh tôi reset router
+Dưới ánh trăng và tín hiệu VSAT, tôi chỉnh tay khẩu độ lẫn subnet
+    </div>
+
+    <section class="image-section">
+      <img src="banner.jpg" alt="Ảnh đen trắng trên biển">
+    </section>
+
+    <section class="intro">
+      <h2>Diễn viên hiện trên biển là ai?</h2>
+      <p>
+        Một kỹ sư điện ngoài khơi, người vừa bắt tín hiệu VSAT vừa bắt khoảnh khắc ánh sáng.
+        Đôi khi không có sóng, nhưng vẫn đồng bộ được cảm xúc – bằng passkey, ống kính, và sự yên lặng của đại dương.
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2025 Diễn viên hiện trên biển
+    </footer>
   </div>
 </body>
 </html>
